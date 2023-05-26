@@ -6,9 +6,9 @@
       <div class="card-body">
       <h5 class="card-title"><li> <%= bookmark.movie.title %> </li></h5>
       <p class="card-text"><li> <%= bookmark.comment %></p>
-      <a href="#" class="btn btn-primary"></a><%= link_to 'Delete this',
+      </a><%= link_to 'Delete this',
         bookmark_path(bookmark),
-          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class:"btn btn-primary" %>
       <% end %>
   </div>
 </div>
